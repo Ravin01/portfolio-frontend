@@ -1,0 +1,42 @@
+
+.about-container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 80px;
+    border: 1px solid white;
+}
+.about-image{
+    width: 45vw;
+    height: 90vh;
+    animation: imageAni 2s ease-out;
+}
+@keyframes imageAni{
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.about-content{
+    color: #d0d3d4;
+    width: 500vw;
+    height: 100vh;
+    border: 1px solid white;
+}
+.about-btn{
+    border: none;
+    border-radius: 8px;
+    padding: 11px 22px;
+}
+.about-btn-link{
+    color: #040404;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}

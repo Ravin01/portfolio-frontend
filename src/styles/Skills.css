@@ -1,0 +1,23 @@
+.skill-container{
+    height: 130vh;
+    width: 100vw;
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    color: #ECF0F1;
+    margin: 20px 0px;
+    border: 1px solid white;
+}
+.skill-heading{
+    font-size: 50px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-top: 35px;
+}
+.skill-content{
+    height: 58%;
+    width: 85%;
+    border: 1px solid white;
+}

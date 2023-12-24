@@ -1,0 +1,11 @@
+.home-background{
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.home-background::-webkit-scrollbar{
+    display: none;
+}

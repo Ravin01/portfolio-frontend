@@ -1,0 +1,39 @@
+.cer-background{
+    width: 100vw;
+    height: 100vh;
+    
+}
+.cer-data{
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding: 20px 0px;
+}
+.cer-data::-webkit-scrollbar{
+    display: none;
+}
+.cer-item{
+    width: 80vw;
+    height: 80vh;
+    border-radius: 15px;
+    margin: 20px;
+    animation: imageAni 2s ease-out;
+    box-shadow: #3498DB 0px 2px 4px 0px, #3498DB 0px 2px 16px 0px;
+}
+.cer-item:hover{
+    transform: scale(1.01);
+}
+@keyframes imageAni{
+    0%{
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

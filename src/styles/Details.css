@@ -1,0 +1,13 @@
+.pro-container{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pro-con{
+    width: 75vw;
+    height: 80vh;
+    background-color: blue;
+}
