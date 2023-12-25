@@ -1,13 +1,38 @@
 .skill-container{
-    height: 130vh;
+    height: 100vh;
     width: 100vw;
-    /* display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; */
     color: #ECF0F1;
     margin: 20px 0px;
-    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #040015;
+    /* position: relative; */
+    /* position: relative; */
+}
+
+.skill-vdo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    /* rotate: 180deg; */
+    z-index: -1; /* Set a negative z-index to place it behind other content */
+  }
+
+  .skill-con2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
 }
 .skill-heading{
     font-size: 50px;
@@ -17,7 +42,26 @@
     margin-top: 35px;
 }
 .skill-content{
-    height: 58%;
-    width: 85%;
-    border: 1px solid white;
+    height: 85%;
+    width: 70%;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+.skill-icon{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+.skill-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.skill-item h6{
+    font-size: 18px;
 }

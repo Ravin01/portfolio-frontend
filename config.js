@@ -17,17 +17,17 @@ import notes from './src/assets/project/notes.png'
 export const projectArray = [
     {
         id : "01",
-        type : 'full',
+        type : 'Full Stack Project',
         name : 'Notes Application',
         image : notes,
         details : {
             github : 'https://github.com/Ravin01/Notes-Taking-frontend',
             githubBack : 'https://github.com/Ravin01/Notes-Taking-backend',
             live : 'https://timely-tapioca-6da940.netlify.app',
-            tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js'],
-            time : 'November-2023',
+            tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js','JWT','nodeMailer', 'bcrypt', 'middleware', 'dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage'],
+            time : 'Nov-2023',
             note : 'I had created complete Notes Taking Application using MERN stack',
-            features : ['login','Authentication', 'JWT','nodeMailer', 'bcrypt', 'middleware', 'password reset', 'send bulk Mail', 'dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage', 'Responsive', 'search Functionality', 'customize theme', 'user can create new folder'],
+            features : ['Authentication', 'password reset', 'CRUD','create new Sticky', 'Responsive', 'search Functionality', 'customize theme', 'user can create new folder'],
             host : {
                 frontEnd : 'Netlify',
                 BackEnd : 'Render',
@@ -40,17 +40,17 @@ export const projectArray = [
     },
     {
         id : "02",
-        type : 'full',
+        type : 'Full Stack Project',
         name : 'Mail System',
         image : mail,
         details : {
             github : 'https://github.com/Ravin01/capstone1-bulkMail-frontend',
             githubBack : 'https://github.com/Ravin01/capstone1-bulkMail-backend',
             live : 'https://main--incredible-cannoli-8bf71b.netlify.app',
-            tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js'],
+            tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js', 'JWT','nodeMailer', 'bcrypt', 'middleware','dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage'],
             time : 'October-2023',
             note : 'I had created complete Bulk Mail System using MERN stack',
-            features : ['login','Authentication', 'JWT','nodeMailer', 'bcrypt', 'middleware', 'password reset', 'send bulk Mail', 'dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage', 'Responsive'],
+            features : ['Authentication', 'password reset', 'send bulk Mail', 'Responsive'],
             host : {
                 frontEnd : 'Netlify',
                 BackEnd : 'Render',
@@ -63,16 +63,16 @@ export const projectArray = [
     },
     {
         id : "03",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Student Mentor',
         image : stuReact,
         details : {
             github : 'https://github.com/Ravin01/task14-day26',
             live : 'https://main--preeminent-treacle-e716c4.netlify.app',
-            tech : ['HTML', 'CSS', 'Js', 'React.js'],
+            tech : ['HTML', 'CSS', 'Js', 'React.js', 'react-router-dom'],
             time : 'August-2023',
             note : 'I had practiced CRUD Using React.js',
-            features : ['Components Based approach','Responsive', 'CRUD', 'react-router-dom'],
+            features : ['Components Based approach','Responsive', 'CRUD', ],
             host : {
                 frontEnd : 'Netlify',
             }
@@ -80,16 +80,16 @@ export const projectArray = [
     },
     {
         id : "04",
-        type : 'back',
+        type : 'BackEnd Project',
         name : 'Mentor Student',
         image : mentorBack,
         details : {
             github : 'https://github.com/Ravin01/changeMentor-day37',
             live : 'https://task20-day36.onrender.com',
-            tech : ['node.js', 'mongoDB', 'Express.js'],
+            tech : ['node.js', 'mongoDB', 'Express.js', 'Router'],
             time : 'October-2023',
             note : 'I had practiced CRUD operation Using node.js',
-            features : ['Router','Implement CRUD', 'Students and mentor assigning respectively'],
+            features : ['Implemented CRUD', 'Students and mentor assigning respectively'],
             host : {
                 BackEnd : 'Render',
             }
@@ -98,16 +98,16 @@ export const projectArray = [
     
     {
         id : "05",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'CRUD operation',
         image : crud,
         details : {
             github : 'https://github.com/Ravin01/task13-day23',
             live : 'https://master--shiny-malabi-965173.netlify.app',
-            tech : ['HTML', 'CSS', 'Js', 'React.js'],
+            tech : ['HTML', 'CSS', 'Js', 'React.js', 'react-router-dom'],
             time : 'july-2023',
             note : 'I had practiced CRUD Using React.js',
-            features : ['Components Based approach','Responsive', 'CRUD', 'react-router-dom'],
+            features : ['Components Based approach','Responsive', 'CRUD', ],
             host : {
                 frontEnd : 'Netlify',
             }
@@ -115,7 +115,7 @@ export const projectArray = [
     },
     {
         id : "06",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Admin page',
         image : admin,
         details : {
@@ -132,7 +132,7 @@ export const projectArray = [
     },
     {
         id : "07",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Simple Forms',
         image : form,
         details : {
@@ -149,7 +149,7 @@ export const projectArray = [
     },
     {
         id : "08",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Shopping Cart',
         image : shopping,
         details : {
@@ -167,7 +167,7 @@ export const projectArray = [
     
     {
         id : "09",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Symposium Website',
         image : sympo,
         details : {
@@ -184,7 +184,7 @@ export const projectArray = [
     },
     {
         id : "10",
-        type : 'ui',
+        type : 'UI',
         name : 'Keyboard',
         image : key01,
         details : {
@@ -201,7 +201,7 @@ export const projectArray = [
     },
     {
         id : "11",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Calculator',
         image : frontCalculator,
         details : {
@@ -218,7 +218,7 @@ export const projectArray = [
     },
     {
         id : "12",
-        type : 'ui',
+        type : 'UI',
         name : '3D Box',
         image : box,
         details : {
@@ -227,7 +227,7 @@ export const projectArray = [
             tech : ['HTML', 'CSS'],
             time : 'December-2022',
             note : 'I had created this 3D Animation for practice HTML and CSS Animation',
-            features : ['Look like a Animation','Responsive', 'This 3D box is rotates 360 degree automatically'],
+            features : ['Look like a Animation','Responsive', 'rotates 360 degree'],
             host : {
                 frontEnd : 'Netlify',
             }
@@ -235,7 +235,7 @@ export const projectArray = [
     },
     {
         id : "13",
-        type : 'ui',
+        type : 'UI',
         name : 'Pepsi',
         image : pepsi,
         details : {
@@ -244,7 +244,7 @@ export const projectArray = [
             tech : ['HTML', 'CSS'],
             time : 'December-2022',
             note : 'I had created this Card for practice HTML and CSS',
-            features : ['Look like a Card','Responsive', 'When you hover then this card will expand and show the details'],
+            features : ['Look like a Card','Responsive', 'Hover effect'],
             host : {
                 frontEnd : 'Netlify',
             }
@@ -253,7 +253,7 @@ export const projectArray = [
     
     {
         id : "14",
-        type : 'ui',
+        type : 'UI',
         name : 'Water Drop',
         image : waterDrop,
         details : {
@@ -262,7 +262,7 @@ export const projectArray = [
             tech : ['HTML', 'CSS'],
             time : 'January-2023',
             note : 'I had created this Drop like Effect for practice HTML and CSS',
-            features : ['Look like a Water Drop','Responsive', 'When you hover then this shape will change to circle shape'],
+            features : ['Look like a Water Drop','Responsive', 'Hover effect'],
             host : {
                 frontEnd : 'Netlify',
             }
@@ -270,7 +270,7 @@ export const projectArray = [
     },
     {
         id : "15",
-        type : 'front',
+        type : 'FrontEnd Project',
         name : 'Time Counter',
         image : counter,
         details : {
@@ -289,66 +289,79 @@ export const projectArray = [
 ]
 
 
+import html from './src/assets/icons/html.png'
+import css from './src/assets/icons/css3.png'
+import js from './src/assets/icons/javascript.png'
+import bootstrap from './src/assets/icons/bootstrap.png'
+import react from './src/assets/icons/react.png'
+import npm from './src/assets/icons/npm.png'
+import github from './src/assets/icons/github.png'
+import nodejs from './src/assets/icons/nodejs.png'
+import express from './src/assets/icons/express.png'
+import redux from './src/assets/icons/redux.png'
+import api from './src/assets/icons/api.png'
 
 export const skillsArray = [
     {
         name : 'HTML',
-        type : 'front'
+        type : 'front',
+        img : html
     },
     {
         name : 'CSS',
-        type : 'front'
+        type : 'front',
+        img : css
     },
     {
         name : 'Bootstrap',
-        type : 'front'
+        type : 'front',
+        img : bootstrap
     },
     {
         name : 'JavaScript',
-        type : 'front'
-    },
-    {
-        name : 'TypeScript',
-        type : 'front'
+        type : 'front',
+        img : js
     },
     {
         name : 'React.js',
-        type : 'front'
+        type : 'front',
+        img : react
+    },
+    {
+        name : 'Redux',
+        type : 'front',
+        img : redux
     },
     {
         name : 'Node.js',
-        type : 'Back'
+        type : 'Back',
+        img : nodejs
     },
     {
         name : 'Express.js',
-        type : 'Back'
+        type : 'Back',
+        img : express
     },
     {
         name : 'MongoDB',
-        type : 'Back'
+        type : 'Back',
+        img : 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg'
     },
     {
         name : 'GitHub',
-        type : 'version'
+        type : 'version',
+        img : github
+    },
+    {
+        name : 'npm',
+        img : npm
     },
     {
         name : 'Postman',
-        type : 'api'
+        img : 'https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg'
     },
     {
-        name : 'JWT',
-        type : 'package'
-    },
-    {
-        name : 'Scokit',
-        type : 'package'
-    },
-    {
-        name : 'razorpay',
-        type : 'package'
-    },
-    {
-        name : 'Authentication',
-        type : 'package'
-    },
+        name : 'API',
+        img : api
+    }
 ]

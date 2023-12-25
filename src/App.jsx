@@ -8,12 +8,13 @@ import Certificates from "./pages/Certificates";
 
 function App() {
   const [id, setId] = useState("");
+  const [singleProject, setSingleProject] = useState({})
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home setId={setId} />} />
-          <Route path={`${id}`} element={<Details id={id} />} />
+          <Route path="/" element={<Home setId={setId} setSingleProject={setSingleProject} />} />
+          <Route path={`${id}`} element={<Details singleProject={singleProject} />} />
           <Route path="/certificates" element={<Certificates />} />
         </Routes>
         

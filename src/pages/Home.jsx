@@ -8,21 +8,27 @@ import Profile from "../Components/Profile";
 import Project from "../Components/Project";
 import Skills from "../Components/Skills";
 import "../styles/Home.css";
+import world from '../assets/source/blackhole.webm'
 
-const Home = ({ setId }) => {
+const Home = ({ setId, setSingleProject }) => {
   return (
-    <div className="home-container">
-      <Particle />
+    <div className="video-container">
+    {/* <video autoPlay muted loop className="home-vdo">
+      <source src={world} type="video/webm" />
+    </video> */}
+    <div className="content-container">
+      {/* <Particle /> */}
       <div className="home-background">
         <Profile />
         <About />
         <Skills />
-        <Project setId={setId} />
+        <Project setId={setId} setSingleProject={setSingleProject} />
         <Contact />
-      <Navbar />
-      <Footer />
       </div>
     </div>
+    <Navbar />
+    {/* <Footer /> */}
+  </div>
   );
 };
 

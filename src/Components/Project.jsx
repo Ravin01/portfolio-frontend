@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { projectArray } from "../../config.js";
 
 
-const Project = ({setId}) => {
+const Project = ({setId, setSingleProject}) => {
   const [projectData, setProjectData] = useState(projectArray);
 
 
@@ -21,7 +21,8 @@ const Project = ({setId}) => {
 
   const handleOpenDetails = (id)=>{
     setId(id)
-    console.log(id)
+    const data = projectArray.find((item) => item.id === id)
+    setSingleProject(data)
   }
 
 
@@ -36,25 +37,25 @@ const Project = ({setId}) => {
         </button>
         <button
           className="project-filter-btn"
-          onClick={() => handleFilter("full")}
+          onClick={() => handleFilter("Full Stack Project")}
         >
           Full Stack
         </button>
         <button
           className="project-filter-btn"
-          onClick={() => handleFilter("front")}
+          onClick={() => handleFilter("FrontEnd Project")}
         >
           Front-End
         </button>
         <button
           className="project-filter-btn"
-          onClick={() => handleFilter("back")}
+          onClick={() => handleFilter("BackEnd Project")}
         >
           Back-End
         </button>
         <button
           className="project-filter-btn"
-          onClick={() => handleFilter("ui")}
+          onClick={() => handleFilter("UI")}
         >
           UI
         </button>

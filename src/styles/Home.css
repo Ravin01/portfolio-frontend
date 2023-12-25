@@ -5,7 +5,42 @@
     position: absolute;
     left: 0;
     top: 0;
+    /* background-color: #040015; */
 }
 .home-background::-webkit-scrollbar{
     display: none;
 }
+/* .home{
+    z-index: -1;
+    background-color: #040015;
+  } */
+
+/* .home-vdo{
+    position: fixed;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+  transform: rotate(180deg);
+} */
+/* .profile-content{
+    z-index: 20;
+} */
+/* .about-container{
+    z-index: -20;
+} */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #040015;
+    z-index: 1;
+  }
+  
+
+  
+  /* Rest of your styling for Particle, Profile, About, Skills, Project, Contact, Navbar, and Footer components */
+  

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-
+import '../styles/Particle.css'
 
 const Particle = () => {
     const [ init, setInit ] = useState(false);
@@ -20,14 +20,20 @@ const Particle = () => {
 
   return (
     <>
+   <div className="particle-container" >
+
+
+
     {init && <Particles
             id="tsparticles"
             particlesLoaded={particlesLoaded}
             options={{
                 background: {
                     color: {
-                        value: '#040404',
+                        value: 'transparent',
+                        // value: '#040015',
                     },
+                    
                 },
                 interactivity: {
                     events: {
@@ -79,6 +85,7 @@ const Particle = () => {
                 detectRetina: true,
             }}
         />}
+           </div>
     </>
   )
 }

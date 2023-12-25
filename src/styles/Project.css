@@ -7,8 +7,21 @@
     flex-direction: column;
     color: #ECF0F1;
     margin: 20px 0px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
+/* .profile-vdo{
+    position: absolute;
+  top: -340px;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  z-index: 1;
+  object-fit: cover;
+  transform: rotate(180deg);
+}
+.profile-content{
+    z-index: 20;
+} */
 .project-items-con{
     height: 90%;
     width: 85vw;
@@ -18,7 +31,7 @@
     align-items: center;
     flex-wrap: wrap;
     margin: 30px 0px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .project-items-con::-webkit-scrollbar{
     display: none;
@@ -66,7 +79,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 .project-item-btn{
     font-size: 13px;
