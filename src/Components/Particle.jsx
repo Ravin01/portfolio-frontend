@@ -70,16 +70,16 @@ const Particle = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 180,
+                        value: 120,
                     },
                     opacity: {
-                        value: 0.9,
+                        value: 0.5,
                     },
                     shape: {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 0.5, max: 2 },
+                        value: { min: 0.5, max: 1.5 },
                     },
                 },
                 detectRetina: true,

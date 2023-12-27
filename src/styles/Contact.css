@@ -1,5 +1,5 @@
 .contact-container{
-    height: 75vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70%;
+    height: 75%;
     width: 80%;
     /* border: 1px solid white; */
 }
@@ -35,26 +35,48 @@
 .contact-input{
     padding: 0px 10px;
     height: 45px;
-    width: 25vw;
+    width: 30vw;
     border: none;
+    /* background-color: #f2f2f2; */
     border-radius: 10px;
-    /* box-shadow: #2874A6 0px 3px 10px; */
-    
+    /* box-shadow: #2874A6 0px 3px 10px; */   
+}
+.contact-input{
+    height: 45px;
+    width: 30vw;
+    padding: 0px 15px;
+    appearance: none;
+	border: none;
+	outline: none;
+	border-bottom: 3px solid #5b21b6;
+	background: #cbc4d4;
+	border-radius: 5px 5px 0px 0px;
+	/* padding: .4em; */
+	color: #040404;
+    font-weight: 600;
+    /* font-size: 15px; */
+
+}
+.contact-input::placeholder{
+    color: #434343;
 }
 .contact-input:focus{
     outline: none;
-    box-shadow: #2874A6 0px 1px 4px, #2874A6 0px 0px 0px 3px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: #5b21b6 0px 1px 4px, #5b21b6 0px 0px 0px 3px;
 }
 .contact-btn{
-    padding: 9px 22px;
+    padding: 12px 32px;
     font-size: 16px;
     border: none;
     font-weight: 500;
-    background-color: #35a8f4;
+    background-color: transparent;
     border-radius: 7px;
-    color: #040404;
+    color: white;
     letter-spacing: 2px;
     cursor: pointer;
+    box-shadow: #5b21b6 2px 3px 10px -1px inset;
 }
 .contact-btn:hover{
     transform: scale(1.05);
@@ -66,27 +88,35 @@
     align-items: center;
     height: 70%;
     width: 60%;
-    margin-bottom: 50px;
+    margin-bottom: 90px;
     /* border: 1px solid white; */
 }
 .contact-item-mail{
     width: 17vw;
     height: 75px;
-    background-color: #35a8f4;
+    background-color: transparent;
     display: flex;
+    border: 2px solid #5b21b6;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
     font-size: 18px;
     position: relative;
+    
 }
-.contact-item-mail i{
-    font-size: 30px;
+.contact-item-icon{
+    height: 70px;
+    width: 70px;
     position: absolute;
-    top: -35%;
-    left: 40%;
-    background-color: #35a8f4;
+    top: -40px;
+    left: 35%;
+    /* background-color: #35a8f4; */
     padding: 10px;
-    border-radius: 50%;
-    border: 1.5px solid black;
+    /* border-radius: 50%; */
+    /* border: 1.5px solid white; */
+}
+.contact-item-link{
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
 }

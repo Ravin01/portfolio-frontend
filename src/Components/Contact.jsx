@@ -5,6 +5,10 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "../styles/Contact.css";
 import { Link } from "react-router-dom";
+import linkedIn from "../assets/icons/linkedin.png"
+import call from "../assets/icons/call.png"
+import whatsapp from "../assets/icons/whatsapp.png"
+import Footer from "../Components/Footer"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -12,13 +16,13 @@ const Contact = () => {
     user_email: "",
     message: "",
   });
-  const [sendBtn, setSendBtn] = useState('Send')
+  const [sendBtn, setSendBtn] = useState("Send");
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
   const handleSubmit = async (e) => {
-    setSendBtn('Sending...')
+    setSendBtn("Sending...");
     e.preventDefault();
     console.log(formData);
     const serviceId = "service_74xumg9";
@@ -42,7 +46,7 @@ const Contact = () => {
           progress: undefined,
           theme: "dark",
         });
-        setSendBtn('Send')
+        setSendBtn("Send");
         setFormData({
           user_name: "",
           user_email: "",
@@ -60,65 +64,85 @@ const Contact = () => {
         progress: undefined,
         theme: "dark",
       });
-      setSendBtn('Send')
+      setSendBtn("Send");
     }
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact" >
       <h3 className="contact-name">Contact me</h3>
       <div className="contact-con">
-      <div className="contact-info">
-        <div className="contact-item-mail">
-        <i className="fa-solid fa-envelope"></i>
-        <h5>ravinganapathi@gmail.com</h5>
+        <div className="contact-info">
+          <div className="contact-item-mail">
+            {/* <i className="fa-solid fa-envelope"></i> */}
+            <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" className="contact-item-icon" />
+            <h5 className="contact-item-link" >ravinganapathi@gmail.com</h5>
+          </div>
+          <div className="contact-item-mail">
+            {/* <i className="fa-solid fa-phone"></i> */}
+            <img src={call} alt="" className="contact-item-icon" />
+            <h5 className="contact-item-link" >+91 8870290307</h5>
+          </div>
+          <div className="contact-item-mail">
+            {/* <i className="fa-brands fa-linkedin"></i> */}
+            <img src={linkedIn} alt="" className="contact-item-icon" />
+            <h5>
+              <Link
+                to="https://www.linkedin.com/in/ravin-g-00b6b8224"
+                target="blank"
+                className="contact-item-link"
+              >
+                Take a look
+              </Link>
+            </h5>
+          </div>
+          <div className="contact-item-mail">
+            {/* <i className="fa-brands fa-square-whatsapp"></i> */}
+            <img src={whatsapp} alt="" className="contact-item-icon" />
+            <h5>
+              <Link to="https://wa.me/+918870290307" target="blank" className="contact-item-link">
+                Let's Talk
+              </Link>
+            </h5>
+          </div>
         </div>
-        <div className="contact-item-mail">
-        <i className="fa-solid fa-phone"></i>
-        <h5>+91 8870290307</h5>
-        </div>
-        <div className="contact-item-mail">
-        <i className="fa-brands fa-linkedin"></i>
-        <h5><Link to='https://www.linkedin.com/in/ravin-g-00b6b8224' target="blank" >Take a look</Link></h5>
-        </div>
-        <div className="contact-item-mail">
-        <i className="fa-brands fa-square-whatsapp"></i>
-        <h5><Link to='https://wa.me/+918870290307'target="blank" >Let's Talk</Link></h5>
-        </div>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            className="contact-input"
+            name="user_name"
+            value={formData.user_name}
+            onChange={handleInputChange}
+            placeholder="Enter your Name"
+            required
+          />
+          <input
+            type="text"
+            className="contact-input"
+            name="user_email"
+            value={formData.user_email}
+            onChange={handleInputChange}
+            placeholder="Enter your email"
+            required
+          />
+          <input
+            type="text"
+            className="contact-input"
+            name="message"
+            value={formData.message}
+            onChange={handleInputChange}
+            placeholder="Enter your message"
+            required
+          />
+          <button className="contact-btn" type="submit">
+            {sendBtn}
+          </button>
+        </form>
+       
       </div>
-      <form className="contact-form" onSubmit={handleSubmit}>
-        <input
-          type="text"
-          className="contact-input"
-          name="user_name"
-          value={formData.user_name}
-          onChange={handleInputChange}
-          placeholder="Enter your Name"
-          required
-        />
-        <input
-          type="text"
-          className="contact-input"
-          name="user_email"
-          value={formData.user_email}
-          onChange={handleInputChange}
-          placeholder="Enter your email"
-          required
-        />
-        <input
-          type="text"
-          className="contact-input"
-          name="message"
-          value={formData.message}
-          onChange={handleInputChange}
-          placeholder="Enter your message"
-          required
-        />
-        <button className="contact-btn" type="submit">
-          {sendBtn}
-        </button>
-      </form>
-      </div>
+      <div className="contact-footer">
+          <Footer />
+        </div>
       <ToastContainer
         position="bottom-right"
         autoClose={5000}

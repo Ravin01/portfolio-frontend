@@ -300,6 +300,10 @@ import nodejs from './src/assets/icons/nodejs.png'
 import express from './src/assets/icons/express.png'
 import redux from './src/assets/icons/redux.png'
 import api from './src/assets/icons/api.png'
+import firebase from './src/assets/icons/firebase.png'
+import AWS from './src/assets/icons/aws.png'
+import vite from './src/assets/icons/vite.svg'
+
 
 export const skillsArray = [
     {
@@ -363,5 +367,17 @@ export const skillsArray = [
     {
         name : 'API',
         img : api
+    },
+    {
+        name : 'Firebase',
+        img : firebase
+    },
+    {
+        name : 'AWS',
+        img : AWS
+    },
+    {
+        name : 'Vite',
+        img : vite
     }
 ]

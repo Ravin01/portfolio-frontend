@@ -38,9 +38,10 @@
     padding: 15px 45px;
     cursor: pointer;
     background: transparent;
-    box-shadow: #5b21b6 0px 10px 20px -1px inset, #5b21b6 0px 6px 15px -1px inset;
+    box-shadow: #5b21b6 0px 5px 25px -1px inset;
 }
 .about-btn:hover{
+    box-shadow: #5b21b6 0px 10px 20px -1px inset, #5b21b6 0px 6px 15px -1px inset;
     transform: scale(1.05);
 }
 .about-btn-link{

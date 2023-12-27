@@ -1,7 +1,7 @@
 .cer-background{
     width: 100vw;
     height: 100vh;
-    
+    background-color: #040404;
 }
 .cer-data{
     height: 100vh;
@@ -22,7 +22,7 @@
     border-radius: 15px;
     margin: 20px;
     animation: imageAni 2s ease-out;
-    box-shadow: #3498DB 0px 2px 4px 0px, #3498DB 0px 2px 16px 0px;
+    box-shadow: #5b21b6 0px 2px 4px 0px, #5b21b6 0px 2px 16px 0px;
 }
 .cer-item:hover{
     transform: scale(1.01);

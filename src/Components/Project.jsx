@@ -13,10 +13,12 @@ const Project = ({setId, setSingleProject}) => {
 
   const handleFilterAll = () => {
     setProjectData(projectArray);
+    setActiveBtn('All')
   };
   const handleFilter = (type) => {
     const data = projectArray.filter((item) => item.type === type);
     setProjectData(data);
+    setActiveBtn(type)
   };
 
   const handleOpenDetails = (id)=>{
@@ -25,36 +27,39 @@ const Project = ({setId, setSingleProject}) => {
     setSingleProject(data)
   }
 
+  const [activeBtn, setActiveBtn] = useState('All')
+
 
   return (
     <>
     
-    <div className="project-container">
+    <div className="project-container" id="project" >
       <h3 className="project-heading" >Projects</h3>
+      
       <div className="project-filters">
-        <button className="project-filter-btn" onClick={handleFilterAll}>
+        <button className={activeBtn === 'All' ? 'project-active-btn' : 'project-filter-btn'} onClick={handleFilterAll}>
           All
         </button>
         <button
-          className="project-filter-btn"
+          className={activeBtn === 'Full Stack Project' ? 'project-active-btn' : 'project-filter-btn'}
           onClick={() => handleFilter("Full Stack Project")}
         >
           Full Stack
         </button>
         <button
-          className="project-filter-btn"
+          className={activeBtn === 'FrontEnd Project' ? 'project-active-btn' : 'project-filter-btn'}
           onClick={() => handleFilter("FrontEnd Project")}
         >
           Front-End
         </button>
         <button
-          className="project-filter-btn"
+         className={activeBtn === 'BackEnd Project' ? 'project-active-btn' : 'project-filter-btn'}
           onClick={() => handleFilter("BackEnd Project")}
         >
           Back-End
         </button>
         <button
-          className="project-filter-btn"
+         className={activeBtn === 'UI' ? 'project-active-btn' : 'project-filter-btn'}
           onClick={() => handleFilter("UI")}
         >
           UI
@@ -67,11 +72,13 @@ const Project = ({setId, setSingleProject}) => {
 
               <h4>{d.name}</h4>
             <div className="project-btn">
-              <button className="project-item-btn">
-                <Link to={d.details.live} target="_blank" className="project-btn-link" >Live</Link>
+              <button className="project-item-btn-live">
+                <Link to={d.details.live} target="_blank" className="project-btn-link" >
+          Live
+                  </Link>
               </button>
 
-              <button className="project-item-btn">
+              <button className="project-item-btn-code">
                 <Link to={d.details.github} target="blank" className="project-btn-link" >
                   <i className="fa-solid fa-code project-btn-icon" ></i>Code
                 </Link>

@@ -1,7 +1,7 @@
 @keyframes hideIcon{
     0%{
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(20px);
     }
     100%{
         opacity: 1;
@@ -10,34 +10,46 @@
 }
 .nav-container {
   position: fixed;
-  bottom: 35px;
-  left: 38.5vw;
+  top: 10px;
+  left: 20.5vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  height: 50px;
-  width: 25vw;
+  justify-content: space-between;
+  height: 55px;
+  width: 60vw;
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
+  border-radius: 25px;
   box-shadow: 0 2px 5px #141414;
   backdrop-filter: blur(1px);
   -webkit-backdrop-filter: blur(5px);
-  border: 2px solid #3498DB;
-  color: #d0d3d4;
-  font-size: 18px;
-  padding: 5px;
+  border: 2px solid #d0d3d4;
+  padding: 5px 20px;
   animation: hideIcon 2s ease-in-out;
+  z-index: 1;
 }
-
+.nav-logo{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0px 0px 0px -10px;
+}
+.nav-link{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .nav-container i{
     transition: transform 0.3s ease-out;
     transition: color 0.2s ease-in-out;
     padding: 5px;
+    color: #d0d3d4;
+    font-size: 20px;
 }
 
 .nav-container i:hover{
     cursor: pointer;
     transform: translateY(-3px);
-    color: #3498DB;
+    color: #5b21b6;
 }
 
