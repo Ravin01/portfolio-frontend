@@ -1,4 +1,3 @@
-
 .about-container{
     width: 100vw;
     height: 100vh;
@@ -9,7 +8,7 @@
     /* border: 1px solid white; */
 }
 .about-image{
-    margin: 0px 0px 0px -40px;
+    margin: 0px 0px 0px -40px; 
     width: 45vw;
     height: 90vh;
     animation: imageAni 2s ease-out;
@@ -26,7 +25,7 @@
 }
 .about-content{
     color: #d0d3d4;
-    width: 500vw;
+    width: 55vw;
     height: 100vh;
     /* border: 1px solid white; */
     /* z-index: 20; */
@@ -100,4 +99,173 @@
     padding: 0px 20px;
     margin: 30px 0px 10px 22px;
     font-size: 15px;
+}
+
+@media screen and (max-width : 1115px) {
+    .about-image{
+        margin: 0px 0px 0px -40px;
+        width: 40vw;
+        height: 70vh;
+        animation: imageAni 2s ease-out;
+    }
+    .about-text{
+        padding: 10px 10px;
+    }
+}
+@media screen and (max-width : 950px) {
+    .about-image{
+        margin: 0px 0px 0px -40px;
+        width: 40vw;
+        height: 70vh;
+        animation: imageAni 2s ease-out;
+        display: none;
+    }
+    .about-text{
+        padding: 10px 10px;
+    }
+    .about-content{
+        color: #d0d3d4;
+        width: 85vw;
+        height: 100vh;
+    }
+}
+@media screen and (max-width : 750px) {
+    .about-text{
+        padding: 10px 20px;
+    }
+    .about-content{
+        color: #d0d3d4;
+        width: 85vw;
+        height: 100vh;
+    }
+    .about-header{
+        font-size: 40px;
+    }
+    .about-con1{
+        padding: 0px 20px;
+        margin: 30px 0px 10px 22px;
+        font-size: 13px;
+    }
+    .about-con2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        height: 50%;
+        margin-top: 40px;
+        width: 100%;
+    }
+    .about-edu{
+        width: 70%;
+        height: 80%;
+    }
+    .about-edu h4{
+        margin: 10px 0px;
+        font-size: 14px;
+    }
+    .about-edu h5{
+        font-size: 12px;
+    }
+    .about-edu p{
+        font-size: 11px;
+    }
+    .about-text{
+        height: 30%;
+    }
+    .about-text i{
+        font-size: 30px;
+    }
+    .about-btn{
+        margin: 18px 0px 0px 0px;
+        border: none;
+        border-radius: 12px;
+        padding: 10px 35px;
+        cursor: pointer;
+        background: transparent;
+        box-shadow: #5b21b6 0px 5px 25px -1px inset;
+    }
+    .about-btn:hover{
+        box-shadow: #5b21b6 0px 10px 20px -1px inset, #5b21b6 0px 6px 15px -1px inset;
+        transform: scale(1.05);
+    }
+    .about-btn-link{
+        color: #d0d3d4;
+        letter-spacing: 1px;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .about-container{
+        padding-right: 0px;
+    }
+}
+@media screen and (max-width : 500px) {
+    .about-text{
+        padding: 10px 20px;
+    }
+    .about-content{
+        color: #d0d3d4;
+        width: 90vw;
+        height: 100vh;
+    }
+    .about-header{
+        font-size: 35px;
+    }
+    .about-con1{
+        padding: 0px 20px;
+        margin: 30px 0px 10px 0px;
+        font-size: 12px;
+    }
+    .about-con2{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 50%;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .about-edu{
+        width: 60%;
+        height: 100%;
+    }
+    .about-edu h4{
+        margin: 5px 0px;
+        font-size: 14px;
+    }
+    .about-edu h5{
+        font-size: 12px;
+    }
+    .about-edu p{
+        font-size: 10px;
+    }
+    .about-text{
+        width: 80%;
+        height: 22%;
+        padding: 10px 5px 10px 20px;
+        margin: 5px 0px;
+    }
+    .about-text i{
+        font-size: 30px;
+    }
+    .about-btn{
+        margin: 38px 0px 0px 0px;
+        border: none;
+        border-radius: 12px;
+        padding: 10px 35px;
+        cursor: pointer;
+        background: transparent;
+        box-shadow: #5b21b6 0px 5px 25px -1px inset;
+    }
+    .about-btn-link{
+        color: #d0d3d4;
+        letter-spacing: 1px;
+        font-size: 13px;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .about-container{
+        padding-right: 0px;
+    }
 }

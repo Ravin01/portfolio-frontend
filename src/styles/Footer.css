@@ -1,7 +1,4 @@
 footer{
-    /* position: absolute; */
-    /* left: 0; */
-    /* bottom: 0; */
     width: 100vw;
     height: 15vh;
     display: flex;
@@ -11,4 +8,17 @@ footer{
     color: white;
     font-size: 18px;
     font-weight: 500;
+    z-index: 20;
+}
+@media screen and (max-width : 900px) {
+    footer{
+        height: 10vh;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width : 480px) {
+    footer{
+        height: 10vh;
+        font-size: 13px;
+    }
 }

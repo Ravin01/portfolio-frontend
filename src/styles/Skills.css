@@ -1,5 +1,5 @@
 .skill-container{
-    height: 130vh;
+    height: 118vh;
     width: 100vw;
     color: #ECF0F1;
     margin: 20px 0px;
@@ -9,10 +9,7 @@
     flex-direction: column;
     z-index: 1;
     overflow: hidden;
-    /* background-color: #040015; */
-    /* position: relative; */
     position: relative;
-    /* border: 1px solid white; */
 }
 
 .skill-vdo {
@@ -22,8 +19,7 @@
     position: absolute;
     top: 120px;
     left: 0;
-    /* rotate: 180deg; */
-    z-index: -1; /* Set a negative z-index to place it behind other content */
+    z-index: -1; 
   }
 
   .skill-con2{
@@ -68,4 +64,85 @@
 }
 .skill-item h6{
     font-size: 18px;
+}
+
+
+@media screen and (max-width : 1115px) {
+    .skill-heading{
+        font-size: 50px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .skill-content{
+        width: 85%;
+    }
+}
+@media screen and (max-width : 1115px) {
+    .skill-heading{
+        font-size: 50px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 35px;
+    }
+    .skill-content{
+        width: 90%;
+    }
+    .skill-icon{
+        width: 80px;
+        height: 80px;
+    }
+    .skill-vdo{
+        width: 100%;
+        height: 60%;
+        top: 200px;
+    }
+}
+@media screen and (max-width : 650px) {
+    .skill-heading{
+        font-size: 40px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .skill-content{
+        width: 90%;
+    }
+    .skill-icon{
+        width: 60px;
+        height: 60px;
+    }
+    .skill-vdo{
+        width: 100%;
+        height: 60%;
+        top: 280px;
+    }
+}
+@media screen and (max-width : 450px) {
+    .skill-heading{
+        font-size: 35px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: -50px;
+    }
+    .skill-content{
+        width: 100%;
+        padding: 20px 30px;
+    }
+    .skill-icon{
+        width: 40px;
+        height: 40px;
+    }
+    .skill-vdo{
+        width: 100%;
+        height: 60%;
+        top: 280px;
+    }
+    .skill-item h6{
+        font-size: 12px;
+    }
 }

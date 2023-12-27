@@ -364,7 +364,7 @@ h2 {
   }
   .profile-buttons {
     width: 75vw;
-    margin: -20px 0px 0px 10px;
+    margin: -10px 0px 0px 10px;
   }
   .profile-btn {
     border-radius: 10px;
@@ -390,7 +390,7 @@ h2 {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: -360px;
+    top: -370px;
     left: 0;
     rotate: 180deg;
     z-index: -1; 

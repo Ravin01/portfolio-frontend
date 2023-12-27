@@ -32,15 +32,7 @@
     width: 50%;
     /* border: 1px solid white; */
 }
-.contact-input{
-    padding: 0px 10px;
-    height: 45px;
-    width: 30vw;
-    border: none;
-    /* background-color: #f2f2f2; */
-    border-radius: 10px;
-    /* box-shadow: #2874A6 0px 3px 10px; */   
-}
+
 .contact-input{
     height: 45px;
     width: 30vw;
@@ -119,4 +111,190 @@
     font-size: 14px;
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width : 1115px) {
+    .contact-con{
+        width: 90%;
+    }
+    .contact-info{
+        width: 60%;
+    }
+    .contact-item-mail{
+        width: 20vw;
+        height: 75px;
+    }
+    .contact-item-link{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width : 900px) {
+    .contact-container{
+        height: 130vh;
+        width: 100vw;
+    }
+    .contact-con{
+        height: 90%;
+        width: 90%;
+        flex-direction: column;
+    }
+    .contact-info{
+        height: 50%;
+        width: 80%;
+        margin: 30px 0px;
+    }
+    .contact-item-mail{
+        width: 28vw;
+        height: 75px;
+    }
+    .contact-item-link{
+        font-size: 13px;
+    }
+    .contact-form{
+        height: 60%;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .contact-input{
+        height: 45px;
+        width: 90%;
+        padding: 0px 15px;
+    
+    }
+}
+
+@media screen and (max-width : 680px) {
+    .contact-info{
+        height: 50%;
+        width: 80%;
+        margin: 30px 0px;
+    }
+    .contact-name{
+        font-size: 35px;
+        margin: 20px 0px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+    .contact-item-mail{
+        width: 32vw;
+        height: 75px;
+    }
+    .contact-item-link{
+        font-size: 12px;
+    }
+    .contact-form{
+        height: 60%;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .contact-input{
+        height: 45px;
+        width: 90%;
+        padding: 0px 15px;
+    }
+    .contact-item-icon{
+        height: 60px;
+        width: 60px;
+        top: -35px;
+    }
+}
+
+@media screen and (max-width : 680px) {
+    .contact-container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .contact-info{
+        height: 40%;
+        width: 80%;
+        margin: 30px 0px;
+    }
+    .contact-item-mail{
+        width: 33vw;
+        height: 58px;
+    }
+    .contact-item-link{
+        font-size: 10px;
+    }
+    .contact-form{
+        height: 60%;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .contact-input{
+        height: 40px;
+        width: 90%;
+        padding: 0px 15px;
+    }
+    .contact-item-icon{
+        height: 50px;
+        width: 50px;
+        top: -30px;
+    }
+    .contact-btn{
+        padding: 9px 25px;
+        font-size: 14px;
+        border: none;
+        font-weight: 500;
+        background-color: transparent;
+        border-radius: 7px;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+        box-shadow: #5b21b6 2px 3px 10px -1px inset;
+    }
+    .contact-btn:hover{
+        transform: scale(1.05);
+    }
+}
+@media screen and (max-width : 680px) {
+    .contact-container{
+        height: 100vh;
+        width: 100vw;
+    }
+    .contact-info{
+        height: 40%;
+        width: 90%;
+        margin: 30px 0px;
+    }
+    .contact-item-mail{
+        width: 38vw;
+        height: 58px;
+    }
+    .contact-item-link{
+        font-size: 9px;
+    }
+    .contact-form{
+        height: 60%;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+    .contact-input{
+        height: 40px;
+        width: 90%;
+        padding: 0px 15px;
+    }
+    .contact-item-icon{
+        height: 50px;
+        width: 50px;
+        top: -30px;
+        left: 33%;
+    }
+    .contact-btn{
+        padding: 9px 28px;
+        margin-top: 20px;
+        font-size: 14px;
+        border: none;
+        font-weight: 500;
+        background-color: transparent;
+        border-radius: 7px;
+        color: white;
+        letter-spacing: 2px;
+        cursor: pointer;
+        box-shadow: #5b21b6 2px 3px 10px -1px inset;
+    }
+    .contact-btn:hover{
+        transform: scale(1.05);
+    }
 }

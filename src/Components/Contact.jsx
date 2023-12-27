@@ -74,34 +74,41 @@ const Contact = () => {
       <div className="contact-con">
         <div className="contact-info">
           <div className="contact-item-mail">
-            {/* <i className="fa-solid fa-envelope"></i> */}
+
             <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico" alt="" className="contact-item-icon" />
             <h5 className="contact-item-link" >ravinganapathi@gmail.com</h5>
           </div>
           <div className="contact-item-mail">
-            {/* <i className="fa-solid fa-phone"></i> */}
+
             <img src={call} alt="" className="contact-item-icon" />
             <h5 className="contact-item-link" >+91 8870290307</h5>
           </div>
           <div className="contact-item-mail">
-            {/* <i className="fa-brands fa-linkedin"></i> */}
+
             <img src={linkedIn} alt="" className="contact-item-icon" />
-            <h5>
+            <h5 className="contact-item-link">
+              Take a look &nbsp; &nbsp;
               <Link
                 to="https://www.linkedin.com/in/ravin-g-00b6b8224"
                 target="blank"
-                className="contact-item-link"
+                className="contact-item-link-click"
+                style={{
+                  color : 'white'
+                }}
               >
-                Take a look
+                click
               </Link>
             </h5>
           </div>
           <div className="contact-item-mail">
-            {/* <i className="fa-brands fa-square-whatsapp"></i> */}
+
             <img src={whatsapp} alt="" className="contact-item-icon" />
-            <h5>
-              <Link to="https://wa.me/+918870290307" target="blank" className="contact-item-link">
-                Let's Talk
+            <h5 className="contact-item-link">
+            Let's Talk &nbsp; &nbsp;
+              <Link to="https://wa.me/+918870290307" target="blank" className="contact-item-link-click" style={{
+                color : 'white'
+              }} >
+                click
               </Link>
             </h5>
           </div>
