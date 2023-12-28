@@ -369,7 +369,7 @@ h2 {
   .profile-btn {
     border-radius: 10px;
     padding: 10px 28px;
-    box-shadow: #5b21b6 0px 2px 15px -1px inset;
+    box-shadow: #5b21b6 0px 5px 15px -1px inset;
   }
   .profile-btn-link {
     font-size: 12px;
@@ -390,9 +390,13 @@ h2 {
     height: 100%;
     object-fit: cover;
     position: absolute;
-    top: -370px;
+    top: -375px;
     left: 0;
     rotate: 180deg;
     z-index: -1; 
+  }
+  .shake-animation {
+    margin: 0px 0px 10px 0px;
+    font-size: 5px;
   }
 }

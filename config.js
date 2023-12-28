@@ -13,6 +13,8 @@ import stuReact from './src/assets/project/StudentReact.png'
 import mentorBack from './src/assets/project/mentorBack.png'
 import mail from './src/assets/project/mail.png'
 import notes from './src/assets/project/notes.png'
+import hall from './src/assets/project/hallBooking.png'
+
 
 export const projectArray = [
     {
@@ -85,11 +87,11 @@ export const projectArray = [
         image : mentorBack,
         details : {
             github : 'https://github.com/Ravin01/changeMentor-day37',
-            live : 'https://task20-day36.onrender.com',
+            live : 'https://changementor-day37.onrender.com',
             tech : ['node.js', 'mongoDB', 'Express.js', 'Router'],
             time : 'October-2023',
             note : 'I had practiced CRUD operation Using node.js',
-            features : ['Implemented CRUD', 'Students and mentor assigning respectively'],
+            features : ['Implemented CRUD', 'Students and mentor assigning respectively', 'Date stored in DB'],
             host : {
                 BackEnd : 'Render',
             }
@@ -127,6 +129,23 @@ export const projectArray = [
             features : ['Components Based approach','Responsive'],
             host : {
                 frontEnd : 'Netlify',
+            }
+        }
+    },
+    {
+        id : "16",
+        type : 'BackEnd Project',
+        name : 'Hall Booking API',
+        image : hall,
+        details : {
+            github : 'https://github.com/Ravin01/task20-day36',
+            live : 'https://task20-day36.onrender.com',
+            tech : ['node.js', 'Express.js', 'Router'],
+            time : 'October-2023',
+            note : 'I had practiced CRUD operation Using node.js',
+            features : ['Implemented CRUD', 'Students and mentor assigning respectively'],
+            host : {
+                BackEnd : 'Render',
             }
         }
     },
