@@ -27,7 +27,7 @@ const Profile = () => {
         <div className="profile-buttons">
           <button className="profile-btn">
             <Link
-              to="https://drive.google.com/file/d/1jgDJ5GKJdNvtS2BcqiAV7X5VyviIRkMs/view?usp=sharing"
+              to="https://drive.google.com/file/d/1hkbb7o-umvn7K7fqkTtVJqdDURvrMWLK/view?usp=sharing"
               target="blank"
               className="profile-btn-link"
             >
