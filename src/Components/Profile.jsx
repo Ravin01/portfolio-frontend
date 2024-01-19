@@ -21,7 +21,7 @@ const Profile = () => {
           </div>
           <h2 className="profile-text-name" >I'm Ravin </h2>
           <h2 className="profile-text-full" >Full Stack Developer</h2>
-          <span className="cursor"></span>
+          <span className="cursor"></span> 
         </div>
 
         <div className="profile-buttons">
