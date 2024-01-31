@@ -83,8 +83,8 @@ export const projectArray = [
                 BackEnd : 'Render',
             },
             user : {
-                email : 'admin@gmail.com',
-                password : 'admin'
+                email : 'user@gmail.com',
+                password : 'user'
             }
         }
     },
