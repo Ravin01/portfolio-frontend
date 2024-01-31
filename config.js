@@ -14,6 +14,8 @@ import mentorBack from './src/assets/project/mentorBack.png'
 import mail from './src/assets/project/mail.png'
 import notes from './src/assets/project/notes.png'
 import hall from './src/assets/project/hallBooking.png'
+import Store from "./src/assets/project/Store.png"
+import Chat from "./src/assets/project/Chat.png"
 
 
 export const projectArray = [
@@ -28,7 +30,7 @@ export const projectArray = [
             live : 'https://timely-tapioca-6da940.netlify.app',
             tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js','JWT','nodeMailer', 'bcrypt', 'middleware', 'dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage'],
             time : 'Nov-2023',
-            note : 'I had created complete Notes Taking Application using MERN stack',
+            note : 'I had completed Notes Taking Application using MERN stack',
             features : ['Authentication', 'password reset', 'CRUD','create new Sticky', 'Responsive', 'search Functionality', 'customize theme', 'user can create new folder'],
             host : {
                 frontEnd : 'Netlify',
@@ -37,6 +39,52 @@ export const projectArray = [
             user : {
                 email : 'user@gmail.com',
                 password : 'password'
+            }
+        }
+    },
+    {
+        id : "16",
+        type : 'Full Stack Project',
+        name : 'Store',
+        image : Store,
+        details : {
+            github : 'https://github.com/Ravin01/Store-Frontend',
+            githubBack : 'https://github.com/Ravin01/Store-Backend',
+            live : 'https://main--frabjous-gingersnap-19bd8d.netlify.app',
+            tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js','JWT','nodeMailer', 'bcrypt', 'middleware', 'dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage'],
+            time : 'Jan-2024',
+            note : 'I had completed E-commerce Application using MERN stack, Only Admin can do CRUD operations',
+            features : ["Authorization",'Authentication', 'password reset', 'CRUD','Cart', 'Responsive', 'search Functionality', 'Filters', 'user history'],
+            host : {
+                frontEnd : 'Netlify',
+                BackEnd : 'Render',
+            },
+            user : {
+                email : 'admin@gmail.com',
+                password : 'admin'
+            }
+        }
+    },
+    {
+        id : "17",
+        type : 'Full Stack Project',
+        name : 'Chat-App',
+        image : Chat,
+        details : {
+            github : 'https://github.com/Ravin01/Chat-Frontend',
+            githubBack : 'https://github.com/Ravin01/Chat-Backend',
+            live : 'https://main--superlative-marshmallow-817dbc.netlify.app',
+            tech : ['HTML','CSS','JS','React.js','node.js', 'mongoDB', 'Express.js','JWT','nodeMailer', 'socket.io', 'bcrypt', 'middleware', 'dotenv', 'mongoDB Atlas', 'react-router-dom', 'session storage'],
+            time : 'Jan-2024',
+            note : 'I had completed E-commerce Application using MERN stack, Only Admin can do CRUD operations',
+            features : ['Authentication', 'password reset','Multiple chats', 'Responsive', 'user can select profile'],
+            host : {
+                frontEnd : 'Netlify',
+                BackEnd : 'Render',
+            },
+            user : {
+                email : 'admin@gmail.com',
+                password : 'admin'
             }
         }
     },

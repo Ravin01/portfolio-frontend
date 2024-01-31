@@ -79,7 +79,7 @@ const Project = ({setId, setSingleProject}) => {
               </button>
 
               <button className="project-item-btn-code">
-                <Link to={d.details.github} target="blank" className="project-btn-link" >
+                <Link to={d.details.github} target="_blank" className="project-btn-link" >
                   <i className="fa-solid fa-code project-btn-icon" ></i>Code
                 </Link>
               </button>

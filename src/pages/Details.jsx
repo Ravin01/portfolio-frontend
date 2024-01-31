@@ -17,7 +17,7 @@ const Details = ({ singleProject }) => {
           <div className="pro-text">
             <h4>Deployed URL</h4>
             <button className="pro-btn-live">
-              <Link to={project.details.live} className="pro-btn-link">
+              <Link to={project.details.live} className="pro-btn-link" target="_blank" >
                 Live
               </Link>
             </button>
@@ -26,7 +26,7 @@ const Details = ({ singleProject }) => {
             <div className="pro-text">
               <h4>Frontend Github URL</h4>
               <button className="pro-btn">
-                <Link to={project.details.github} className="pro-btn-link">
+                <Link to={project.details.github} className="pro-btn-link" target="_blank" >
                   Code
                 </Link>
               </button>
@@ -38,7 +38,7 @@ const Details = ({ singleProject }) => {
             <div className="pro-text">
               <h4>Backend Github URL</h4>
               <button className="pro-btn">
-                <Link to={project.details.githubBack} className="pro-btn-link">
+                <Link to={project.details.githubBack} className="pro-btn-link" target="_blank" >
                   Code
                 </Link>
               </button>
